@@ -2,7 +2,7 @@ import { getOfficers, useOfficers } from './OfficerProvider.js'
 import { officerCard } from './Officer.js'
 
 
-let officerContainer = document.querySelector("#officer-container")
+let officerContainer = document.querySelector(".target-container")
 
 
 export const officerList = () => {
@@ -21,3 +21,6 @@ export const officerList = () => {
     })
 }
 
+document.querySelector("#officers-nav-link").addEventListener("click", () => {
+    officerList()
+})

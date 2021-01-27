@@ -7,19 +7,47 @@
     <title>Glassdale PD</title>
 </head>
 <body>
+    
+    <!--Nav Bar Component -->
+    <header>
+        <button id="dark-mode">Dark Mode</button>
 
+        <nav>
+        
+            <ul>
+                
+          <li>
+            <a id="criminals-nav-link" href="#">Criminals</a>
+          </li>
+          <li>
+            <a id="officers-nav-link" href="#">Officers</a>
+          </li>
+          <li>
+            <a id="facilities-nav-link" href="#">Facilities</a>
+          </li>
+          <li>
+            <a id="notes-nav-link" href="#">Notes</a>
+          </li>
+        </ul>
+      </nav>
+      
+   
+    </header>
+   
+    <main id = "target">
+        <h1>Glassdale Police Department</h1>
+        <select id="filters-crime">
+  
+      </select>
+        
+        <section class="target-container">
 
-    <section class="criminals">
-        <h2 style="text-align:center">Criminals</h2>
-        <div class="convictions-select-container"></div>
-        <div id="criminal-container" class="criminal-list flex-container">
+        </section>
 
-        </div>
-    </section>
+    </main>
 
-    <div class=officer-facility-container>
+<!--     
     <section class="officers">
-        <h2 style="text-align:center">Officers</h2>
         <div class="convictions-select-container"></div>
         <div id="officer-container" class="officer-list-flex-container">
 
@@ -27,13 +55,12 @@
     </section>
 
     <section class="facilities">
-        <h2 style="text-align:center">Facilities</h2>
         <div class="convictions-select-container"></div>
         <div id="facility-container" class="facility-list-flex-container">
 
         </div>
-    </section>
-    </div>
+    </section> 
+    -->
 
     <script type="module" src="scripts/main.js"></script>
 </body>

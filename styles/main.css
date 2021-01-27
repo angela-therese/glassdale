@@ -18,36 +18,59 @@ h1,h2,h3,h4,h5,h6 {
   letter-spacing: 2px;
 }
 
-
-.criminal-list {
+header {
 	display:flex;
-	flex-wrap: wrap;
-	/* border: black 1px solid; */
-	justify-content: space-evenly;
+	flex-direction: column;
+	align-items: center
+}
+
+nav {
+	width: 100vw;
+	background-color:  rgb(74, 205, 209)
+}
+
+ul {
+	display: flex;
+	justify-content: space-around;
+	
+}
+li {
+	list-style: none;
 	
 }
 
+li a {
+	text-decoration: none;
+	color: whitesmoke;
+}
+
+.target {
+	display:flex;
+	flex-wrap: wrap; 
+	justify-content: center;
+
+	/* border: black 1px solid */
+	
+	
+}
+
+
+.target-container {
+	text-align: center;
+}
+
 .criminal-card {
-	flex-basis: 16%;
-	/* border: black 1px dotted; */
+	flex-basis: 25%;
 	margin: 2em;
 	background-color: azure;
 	text-align: center;
 	padding-bottom: 1em;
+	border: black 1px solid
 	
 }
 
-.officers, .facilities {
-	background-color: lightgrey;
-	padding-left: 5em;
-	padding-right: 5em;
-}
 
-li {
-	list-style: none;
-}
-
-.officer-facility-container {
-	display: flex;
-	justify-content: space-evenly;
-}
+.dark-background{
+	background-color: #2b362e;
+	color: #fafcfb;
+  }
