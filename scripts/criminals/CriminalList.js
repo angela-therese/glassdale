@@ -7,18 +7,24 @@ let criminalContainer = document.querySelector(".target-container")
 export const CriminalList = (crimeChosen) => {
     // console.log(crimeChosen)
     getCriminals().then(() => {
-        let criminals = useCriminals();
-        console.log(useCriminals())
+        let allCriminals = useCriminals();
+        
         
         let criminalHTMLString = '';
 
-        if(crimeChosen){
+        // if(crimeChosen){
 
-            criminals = // write your filter here
+            let criminals = allCriminals.filter(currentCriminalInLoop => {
+
+                if(currentCriminalInLoop.conviction === crimeChosen){
+                    return true
+                }
+                return false
+            })
       
-          }
+        
 
-        for(let item of criminals){
+        for(const item of criminals){
             criminalHTMLString += criminalCard(item)
         }
 
