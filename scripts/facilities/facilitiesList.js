@@ -7,6 +7,7 @@ let facilityContainer = document.querySelector(".target-container")
 
 export const facilityList = () => {
     getFacilities().then(() => {
+        
         let facilities = useFacilities();
 
         let facilityHTMLString = '';

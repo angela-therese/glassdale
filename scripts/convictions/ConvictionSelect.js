@@ -46,8 +46,7 @@ console.log(eventObject)
   
 
     if(eventObject.target.id === "filters-crime"){
-        console.log("You selected something from the crime dropdown")
-        console.log("This is the crime that was selected: ", eventObject.target.value)
+        
         const selectedCrime = eventObject.target.value;
         // Your code goes here!
            /*

@@ -5,32 +5,31 @@ let criminalContainer = document.querySelector(".target-container")
 
 
 export const CriminalList = (crimeChosen) => {
-    // console.log(crimeChosen)
+    
     getCriminals().then(() => {
         let allCriminals = useCriminals();
         
-        
-        let criminalHTMLString = '';
 
-        // if(crimeChosen){
+        if(crimeChosen){
 
-            let criminals = allCriminals.filter(currentCriminalInLoop => {
+            allCriminals = allCriminals.filter(currentCriminalInLoop => {
 
-                if(currentCriminalInLoop.conviction === crimeChosen){
-                    return true
-                }
-                return false
+                return currentCriminalInLoop.conviction === crimeChosen
+              
             })
       
         
+       
+        
+        
+        }
 
-        for(const item of criminals){
+        let criminalHTMLString = '';
+        for(const item of allCriminals){
             criminalHTMLString += criminalCard(item)
         }
 
         criminalContainer.innerHTML = `${criminalHTMLString}`
-        
-        
     })
    
 }
@@ -38,6 +37,7 @@ export const CriminalList = (crimeChosen) => {
 
 document.querySelector("#criminals-nav-link").addEventListener("click", () => {
     CriminalList()
+    
 })
 
 

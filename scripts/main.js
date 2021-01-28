@@ -9,7 +9,20 @@ import { facilityList } from "./facilities/facilitiesList.js";
 import { useConvictions } from "./convictions/ConvictionProvider.js";
 import { ConvictionSelect } from "./convictions/ConvictionSelect.js";
 ConvictionSelect()
+import { OfficerSelect } from "./officers/OfficerSelect.js"
+OfficerSelect()
+import { witnessList } from "./witnesses/witnessList.js";
+//witnessList() 
 
+
+
+
+
+
+
+
+
+//DARK MODE EVENT//
 const darkModeButton = document.querySelector("#dark-mode")
 darkModeButton.addEventListener("click", function(){
     // our logic for activating dark mode goes here-- this code only runs AFTER the button is clicked
