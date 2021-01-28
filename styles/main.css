@@ -48,7 +48,7 @@ li a {
 	text-decoration: none;
 	color: whitesmoke;
 	cursor: pointer;
-	padding: 1em
+	padding: 1em;
 	
 	
 	
@@ -97,10 +97,10 @@ a:hover{
 }
 
 #criminal-card {
-	flex-basis: 20%;
+	flex-basis: 18%;
 	margin: 1em;
 	text-align: center;
-	padding-bottom: .5em;
+	/* padding-bottom: .5em; */
 	border: black 1px dotted
 	
 }
