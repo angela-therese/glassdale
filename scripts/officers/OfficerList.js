@@ -37,7 +37,7 @@ export const officerList = (officerChosen) => {
         }
      
         criminalArrestedByO.innerHTML = `
-        <h3> Criminals Arrested by ${officerChosen}:</h3>
+        <h3> Persons Arrested by ${officerChosen}:</h3>
         ${criminalArrestedByOfficerHTML}
         `
     })

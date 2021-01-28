@@ -29,7 +29,12 @@ export const CriminalList = (crimeChosen) => {
             criminalHTMLString += criminalCard(item)
         }
 
-        criminalContainer.innerHTML = `${criminalHTMLString}`
+        criminalContainer.innerHTML = `
+        <section class="cards-rows">
+        ${criminalHTMLString}
+        </section>
+        
+        `
     })
    
 }

@@ -9,8 +9,10 @@ select,
 textarea {
 	color: #404040;
 	font-family: "Comfortaa", Arial, sans-serif;
-	font-size: 14px;
+	font-size: 12px;
 	line-height: 1.5;
+	
+	
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -26,46 +28,80 @@ header {
 
 nav {
 	width: 100vw;
-	background-color:  rgb(74, 205, 209)
+	background-color: rgb(51, 2, 49);
 }
 
 ul {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-evenly;
+	
 	
 }
 li {
 	list-style: none;
 	
+	
 }
 
 li a {
+	/* border:  white 1px dotted; */
 	text-decoration: none;
 	color: whitesmoke;
+	cursor: pointer;
+	padding: 1em
+	
+	
+	
 }
+ 
+a:hover{
+	background-color: rgb(129, 127, 127);
+
+}
+
 
 .target {
 	display:flex;
 	flex-wrap: wrap; 
 	justify-content: center;
+	
 
 	/* border: black 1px solid */
 	
 	
 }
 
+.dropdown {
+
+	width: 20vw
+}
+.dropdown-a-buttons {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 2em;
+	
+	
+}
 
 .target-container {
 	text-align: center;
 }
 
-.criminal-card {
-	flex-basis: 25%;
-	margin: 2em;
-	background-color: azure;
+.cards-rows {
+	display: flex;
+	/* border: solid black 1px; */
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+
+	
+}
+
+#criminal-card {
+	flex-basis: 20%;
+	margin: 1em;
 	text-align: center;
-	padding-bottom: 1em;
-	border: black 1px solid
+	padding-bottom: .5em;
+	border: black 1px dotted
 	
 }
 
