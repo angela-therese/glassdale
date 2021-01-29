@@ -55,6 +55,12 @@ export const officerList = (officerChosen) => {
     })
 }
 
+
+
+
+
+
+
 document.querySelector("#officers-nav-link").addEventListener("click", () => {
     officerList()
 })

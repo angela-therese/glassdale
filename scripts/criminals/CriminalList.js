@@ -17,10 +17,7 @@ export const CriminalList = (crimeChosen) => {
                 return currentCriminalInLoop.conviction === crimeChosen
               
             })
-      
-        
-       
-        
+
         
         }
 
@@ -39,10 +36,9 @@ export const CriminalList = (crimeChosen) => {
    
 }
 
-
+//NAV LINK
 document.querySelector("#criminals-nav-link").addEventListener("click", () => {
     CriminalList()
     
 })
-
 

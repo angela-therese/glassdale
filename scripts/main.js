@@ -13,8 +13,8 @@ import { OfficerSelect } from "./officers/OfficerSelect.js"
 OfficerSelect()
 import { witnessList } from "./witnesses/witnessList.js";
 //witnessList() 
-
-
+import { AssociatesList } from "./associates/associatesList.js"
+// AssociatesList()
 
 
 

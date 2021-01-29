@@ -20,6 +20,36 @@ h1,h2,h3,h4,h5,h6 {
   letter-spacing: 2px;
 }
 
+.target {
+	display:flex;
+	flex-wrap: wrap; 
+	justify-content: center;
+	
+
+	/* border: black 1px solid */
+
+}
+
+.main-content {
+	display: flex;
+	flex-direction: row;
+}
+
+.associates-container {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	text-align: center;
+
+}
+
+.associate-div {
+	border: dotted 1px lightgrey;
+	margin: .5em;
+	background-color:lightgray;
+	padding: 1.5em;
+}
+
 header {
 	display:flex;
 	flex-direction: column;
@@ -57,22 +87,17 @@ li a {
 	 cursor: pointer
  }
 
+ .alibi-button {
+	 margin-bottom: .5em;
+ }
+
 a:hover{
 	/* background-color: rgb(129, 127, 127); */
 
 }
 
 
-.target {
-	display:flex;
-	flex-wrap: wrap; 
-	justify-content: center;
-	
 
-	/* border: black 1px solid */
-	
-	
-}
 
 .dropdown {
 
@@ -88,6 +113,7 @@ a:hover{
 
 .target-container {
 	text-align: center;
+	width: 80vw;
 }
 
 .cards-rows {
