@@ -53,9 +53,12 @@ li a {
 	
 	
 }
- 
+ button {
+	 cursor: pointer
+ }
+
 a:hover{
-	background-color: rgb(129, 127, 127);
+	/* background-color: rgb(129, 127, 127); */
 
 }
 
