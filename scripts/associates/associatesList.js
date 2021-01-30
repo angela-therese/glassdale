@@ -1,9 +1,10 @@
 import { getCriminals, useCriminals } from "../criminals/CriminalProvider.js"
 
-console.log('hola')
 
-//CREATES SPACE WHERE EVENT LISTENER WILL BE TARGETED
+
+//CREATES SPACE WHERE EVENT LISTENER WILL BE ACTIVE
 const associatesButton = document.querySelector("main")
+
 
 //TELLS THE EVENT LISTENER WHAT TO LISTEN FOR AND WHAT TO DO NEXT
 associatesButton.addEventListener("click", (clickObject) => { 
@@ -15,11 +16,10 @@ associatesButton.addEventListener("click", (clickObject) => {
 })
 
 
-
 let associatesContainer = document.querySelector(".associates-container")
-export const AssociatesList = (idNumber) => {
+let name = ''
 
-  
+export const AssociatesList = (idNumber) => {
 
     getCriminals().then(() =>{
         let allCriminals = useCriminals();
@@ -35,47 +35,29 @@ export const AssociatesList = (idNumber) => {
 
                     associatesHTMLstring += `
                     <div class="associate-div">
-                    <li>Name: ${associate.name}</li>
+                    <h4>Criminal: ${singleCriminal.name}</h4>
+                    <p><li>Associate: ${associate.name}</li>
                     <br>
                     <li>Alibi: ${associate.alibi}<li>
                     </div>
                     `
                 })
-               console.log(associatesHTMLstring)
+                
+                name = singleCriminal.name
+                console.log(name)
+                let newWin = window.openlet newWin = window.open("about:blank", "hello", "width=200,height=200");
             }
-         
+            
         }
         associatesContainer.innerHTML = `
-        <h4>Associates and Alibis</h4>
-      <p> ${associatesHTMLstring} </P>
+        
+       ${associatesHTMLstring} 
+       
         
         `
 
     })
-
+    
 
 }
    
-
-
-
-
-
-    // getCriminals().then(() => {
-     
-    // }
-    
-    // }
-// let allCriminals = useCriminals();
-
-// allCriminals = allCriminals.filter(currentCriminal => {
-//     return currentCriminal.id === 
-
-// )
-
-
-
-
-
-// })
-
