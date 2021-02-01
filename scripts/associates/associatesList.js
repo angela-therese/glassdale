@@ -8,16 +8,17 @@ const associatesButton = document.querySelector("main")
 
 //TELLS THE EVENT LISTENER WHAT TO LISTEN FOR AND WHAT TO DO NEXT
 associatesButton.addEventListener("click", (clickObject) => { 
-    console.log(clickObject.target.id)
-    const idString = clickObject.target.id;
-    const idNumber = idString.split('-').pop();
-    console.log(idNumber)
-    AssociatesList(idNumber)
+    if(clickObject.target.id.includes("associates-")){
+        console.log("You clicked the button")
+        const idString = clickObject.target.id;
+        const idNumber = idString.split('-').pop();
+        AssociatesList(idNumber)
+    }
+    
 })
 
 let associatesContainer = document.querySelector(".modal-body")
 
-// let associatesContainer = document.querySelector(".target-container")
 let name = ''
 
 export const AssociatesList = (idNumber) => {
@@ -44,7 +45,7 @@ export const AssociatesList = (idNumber) => {
                 })
                 
                 name = singleCriminal.name
-                console.log(name)
+                
               
             }
             

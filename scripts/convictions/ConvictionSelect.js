@@ -42,7 +42,7 @@ eventHub.addEventListener("change", (eventObject) => {
     console.log("You clicked somewhere in the main container")
     // To be more specific, we need to know specifically what we clicked on
     console.log("Here is the element you clicked on: ", eventObject.target)
-console.log(eventObject)
+    console.log(eventObject)
   
 
     if(eventObject.target.id === "filters-crime"){

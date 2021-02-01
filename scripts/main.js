@@ -3,18 +3,22 @@
 import { CriminalList } from "./criminals/CriminalList.js";
 // CriminalList()
 import { officerList } from "./officers/OfficerList.js"
-// officerList()
+
 import { facilityList } from "./facilities/facilitiesList.js";
-// facilityList()
+
 import { useConvictions } from "./convictions/ConvictionProvider.js";
 import { ConvictionSelect } from "./convictions/ConvictionSelect.js";
 ConvictionSelect()
 import { OfficerSelect } from "./officers/OfficerSelect.js"
 OfficerSelect()
 import { witnessList } from "./witnesses/witnessList.js";
-//witnessList() 
+
 import { AssociatesList } from "./associates/associatesList.js"
-// AssociatesList()
+
+import { NoteForm } from "./notes/noteForm.js"
+NoteForm()
+import { noteList } from "./notes/noteList.js"
+
 
 
 

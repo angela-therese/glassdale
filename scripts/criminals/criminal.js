@@ -2,7 +2,7 @@ export function criminalCard(criminalObject) {
     return` 
         
         <div id="criminal-card">    
-        <h3>${criminalObject.name}</h3>
+        <h6>${criminalObject.name}</h6>
         <li>Age: ${criminalObject.age}</li>
         <li>${criminalObject.conviction}</li>
         <li>Term Start: ${new Date(criminalObject.incarceration.start).toLocaleDateString('en-US')}</li>

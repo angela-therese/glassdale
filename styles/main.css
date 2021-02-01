@@ -42,21 +42,20 @@ h1,h2,h3,h4,h5,h6 {
 	align-items: center;
 	justify-content: center;
 	
+}
 
+.note-div {
+	display: flex;
+	flex-direction: column;
+	margin: 1em
+}
+
+.note-div-flex {
 
 }
+
 h4 {
 	margin: 0
-}
-.associate-div {
-
-	/* border: dotted 1px lightgrey;
-	background: rgb(255, 133, 133);
-	margin: .5em;
-	padding: 1.5em;
-	height: 15vh;
-	border-radius: 2em; */
-	
 }
 
 header {
@@ -97,6 +96,28 @@ li a {
 	
 	
 	
+}
+
+
+.notes-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(244, 96, 96)
+}
+
+.notes-form-flex {
+	width: 40vw;
+
+}
+
+#saveNote {
+	margin-top: 1em;
+}
+
+.note-form-label{
+	margin: 1em;
 }
 
 .alibis-list {
@@ -170,4 +191,6 @@ a:hover{
 	background-color: #2b362e;
 	color: #fafcfb;
   }
+
+
 
