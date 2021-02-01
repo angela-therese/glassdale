@@ -15,8 +15,9 @@ associatesButton.addEventListener("click", (clickObject) => {
     AssociatesList(idNumber)
 })
 
+let associatesContainer = document.querySelector(".modal-body")
 
-let associatesContainer = document.querySelector(".associates-container")
+// let associatesContainer = document.querySelector(".target-container")
 let name = ''
 
 export const AssociatesList = (idNumber) => {
@@ -35,23 +36,24 @@ export const AssociatesList = (idNumber) => {
 
                     associatesHTMLstring += `
                     <div class="associate-div">
-                    <h4>Criminal: ${singleCriminal.name}</h4>
-                    <p><li>Associate: ${associate.name}</li>
+                    <ul class="alibis-list">
+                    <li class="alibis-list-items">${associate.name}/${associate.alibi}</li>
                     <br>
-                    <li>Alibi: ${associate.alibi}<li>
                     </div>
                     `
                 })
                 
                 name = singleCriminal.name
                 console.log(name)
-                let newWin = window.openlet newWin = window.open("about:blank", "hello", "width=200,height=200");
+              
             }
             
         }
         associatesContainer.innerHTML = `
-        
+        <h5 class="modal-criminal-title">${name}'s Associates/Alibis</h5>
        ${associatesHTMLstring} 
+       
+    
        
         
         `

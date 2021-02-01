@@ -7,7 +7,8 @@ export function criminalCard(criminalObject) {
         <li>${criminalObject.conviction}</li>
         <li>Term Start: ${new Date(criminalObject.incarceration.start).toLocaleDateString('en-US')}</li>
         <li>Term End: ${new Date(criminalObject.incarceration.end).toLocaleDateString('en-US')}</li>
-        <button id="associates-${criminalObject.id}"class="alibi-button">Associate Alibis</button>
+        <button type="button" class="alibi-button" data-toggle="modal" data-target="#myModal" id="associates-${criminalObject.id}">
+        Associates & Alibis</button>
      
     </div>
     `
