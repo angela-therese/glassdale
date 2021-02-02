@@ -11,7 +11,18 @@
       "suspectName": "Madelyn Lebsack",
       "entryText": "She baked cookies for her neighbors. ",
       "id": 3
+    },
+    {
+      "date": "2021-02-01",
+      "suspectName": "Michael Stamm",
+      "entryText": "Mid-life crisis led to theft of convertible",
+      "id": 4
+    },
+    {
+      "date": "2021-02-01",
+      "suspectName": "Gerson Steuber",
+      "entryText": "Thinks he is a moth. ",
+      "id": 5
     }
-    
   ]
 }

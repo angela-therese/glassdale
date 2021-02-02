@@ -17,8 +17,14 @@ export const noteList = () => {
         };
 
         notesContainer.innerHTML = `
-        <br>
-        ${notesHTMLString}
+        <table class="notes-table">
+            <tr>
+            <th class="table-category">Date</th>
+            <th class="table-category">Suspect</th>
+            <th class="table-category-notes">Notes</th>
+            </tr>
+        
+            ${notesHTMLString}
         `
 
 
@@ -29,3 +35,6 @@ document.querySelector("#notes-nav-link").addEventListener("click", () => {
     noteList()
      
  })
+
+ // <br>
+//  ${notesHTMLString}
