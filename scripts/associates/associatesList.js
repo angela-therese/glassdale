@@ -53,10 +53,6 @@ export const AssociatesList = (idNumber) => {
         associatesContainer.innerHTML = `
         <h5 class="modal-criminal-title">${name}'s Associates/Alibis</h5>
        ${associatesHTMLstring} 
-       
-    
-       
-        
         `
 
     })

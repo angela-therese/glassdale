@@ -1,28 +1,16 @@
 {
   "notes": [
     {
-      "date": "2021-02-01",
-      "suspectName": "Rogelio Hills",
-      "entryText": "His mom says he's a nice boy. ",
+      "date": "2021-02-10",
+      "text": "His mom says he is a nice boy. ",
+      "criminalId": "2",
+      "id": 1
+    },
+    {
+      "date": "2021-02-10",
+      "text": "Was named after Hannah, big Miley fan. ",
+      "criminalId": "8",
       "id": 2
-    },
-    {
-      "date": "2021-02-01",
-      "suspectName": "Madelyn Lebsack",
-      "entryText": "She baked cookies for her neighbors. ",
-      "id": 3
-    },
-    {
-      "date": "2021-02-01",
-      "suspectName": "Michael Stamm",
-      "entryText": "Mid-life crisis led to theft of convertible",
-      "id": 4
-    },
-    {
-      "date": "2021-02-01",
-      "suspectName": "Gerson Steuber",
-      "entryText": "Thinks he is a moth. ",
-      "id": 5
     }
   ]
 }

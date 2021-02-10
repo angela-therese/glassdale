@@ -1,43 +1,71 @@
 import { saveNote } from "./notesDataProvider.js";
+import { getCriminals, useCriminals } from "../criminals/CriminalProvider.js"
+
+
+export const CriminalSelect = () => {
+    getCriminals().then(() => {
+    
+        const criminals = useCriminals()
+        console.log(criminals)
+        NoteForm(criminals)
+        
+    })
+  
+}
 
 const contentTarget = document.querySelector(".noteFormContainer")
+//RENDERING A DROPDOWN WITH THE CRIMINALS' NAMES
 
-export const NoteForm = () => {
+const NoteForm = criminalCollection => {
+
     contentTarget.innerHTML = `
-        <fieldset class="notes-form">
-        <label class="note-form-label">Date of Entry</label>
-        <input class ="notes-form-flex" type="date" id="entry-date"></input>
-        <label class="note-form-label">Suspect's Name</label>
-        <input class="notes-form-flex" type="text" id="suspect-name"></input>
-        <label class="note-form-label">Type Entry Here</label>
-        <input class="notes-form-flex entry-box" type="text" id="note-text"></input>
-        <button id="saveNote">Save Note</button>
-        </fieldset>
-    `
+    
+    <fieldset class="notes-form">
+    <h6>Enter notes here.</h6>
+    <select class="dropdown" id="criminal-select">
+    <option value="0">Please select a suspect.</option>
+   ${criminalCollection.map((currentCriminal)=> {
+       
+            const criminalName = currentCriminal.name
+            return `<option value="${currentCriminal.id}">${criminalName}</option>`
+    })}
+</select>
+    
+    <input class ="notes-form-flex" type="date" id="entry-date"></input>
+    <input class="notes-form-flex" type="text" placeholder="Type entry here." id="note-text"></input>
+    <button class="save-button" id="saveNote">Save Note</button>
+    </fieldset>
+   
+   `
 }
 
 
 const eventHub = document.querySelector("main")
 
-eventHub.addEventListener("click", clickEvent => {
-    if (clickEvent.target.id === "saveNote") {
 
-        let dateInput = document.getElementById("entry-date").value;
-        let nameInput = document.getElementById("suspect-name").value;
-        let textInput = document.getElementById("note-text").value;
-        const newNote = {
-            "date": dateInput,
-            "suspectName": nameInput,
-            "entryText": textInput
-            // Key/value pairs here
+eventHub.addEventListener("change", (changeEvent) => {
+
+        if(changeEvent.target.id === "criminal-select"){
+            const selectedCriminalId = changeEvent.target.value
+            // console.log(selectedCriminal)
+            eventHub.addEventListener("click", clickEvent => {
+                    if (clickEvent.target.id === "saveNote") {
+                
+                        let dateInput = document.getElementById("entry-date").value;
+                        let textInput = document.getElementById("note-text").value;
+                        const newNote = {
+                            "date": dateInput,
+                            "text": textInput,
+                            "criminalId": selectedCriminalId
+                            }
+
+                        saveNote(newNote)
+                        // .then(noteList())
+                        
+        }
+       
+    })
+    
 
         }
-        console.log(newNote)
-
-        // Change API state and application state
-        saveNote(newNote)
-        .then(NoteList) // Refresh your list of notes once you've saved your new one
-    }
 })
-
-

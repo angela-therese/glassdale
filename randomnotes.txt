@@ -1,1 +1,2 @@
-render function in convictionSelect has funky parentheses/brackets--why?
+1. Make a dropdown of the criminal names in place of the text entry box in the notes form.
+2.Connect the value of the dropdown to the criminal's id

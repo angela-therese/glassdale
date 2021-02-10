@@ -1,14 +1,11 @@
 export function noteEntry(formObject){
 
     return `
-    <tr>
-        <td class="table-data">${formObject.date}</td>
-        <td class="table-data">${formObject.suspectName}</td>
-        <td class="table-data">${formObject.entryText}
-    </tr>
-
-    
-
+    <div class="notes-card">
+    <p><b>ID:</b> ${formObject.id}</p>    
+    <p><b>Date:</b> ${formObject.date}</p>
+    <p><b>Entry:</b> ${formObject.text}</p>
+    </div>
     `
 
 }

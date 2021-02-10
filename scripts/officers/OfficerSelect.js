@@ -18,6 +18,7 @@ export const OfficerSelect = () => {
 };
 
 
+
 const renderOfficerDropdownMenu = officerCollection => {
 
     dropdownOfficersTarget.innerHTML = `
@@ -31,7 +32,6 @@ const renderOfficerDropdownMenu = officerCollection => {
    `
 }
 
-  
 
 const eventHub = document.querySelector("main")
 
@@ -40,7 +40,8 @@ eventHub.addEventListener("change", changeEvent => {
      
         // Get the name of the selected officer
         const selectedOfficer = changeEvent.target.value
-
+        console.log(changeEvent.target.value)
+        
         officerList(selectedOfficer)
 
     }

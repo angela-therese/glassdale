@@ -11,22 +11,16 @@ export const noteList = () => {
 
         let notesArray = useNotes();
         console.log(notesArray)
-       
+       //could refactor using .map
         for(let singleNote of notesArray) {
             notesHTMLString += noteEntry(singleNote)
         };
 
         notesContainer.innerHTML = `
-        <table class="notes-table">
-            <tr>
-            <th class="table-category">Date</th>
-            <th class="table-category">Suspect</th>
-            <th class="table-category-notes">Notes</th>
-            </tr>
-        
+        <section class="note-container"> 
             ${notesHTMLString}
+        </section>
         `
-
 
     })
 }
@@ -36,5 +30,3 @@ document.querySelector("#notes-nav-link").addEventListener("click", () => {
      
  })
 
- // <br>
-//  ${notesHTMLString}

@@ -11,12 +11,14 @@ import { ConvictionSelect } from "./convictions/ConvictionSelect.js";
 ConvictionSelect()
 import { OfficerSelect } from "./officers/OfficerSelect.js"
 OfficerSelect()
+import { CriminalSelect } from "./notes/noteForm.js"
+CriminalSelect()
 import { witnessList } from "./witnesses/witnessList.js";
 
 import { AssociatesList } from "./associates/associatesList.js"
 
-import { NoteForm } from "./notes/noteForm.js"
-NoteForm()
+// import { NoteForm } from "./notes/noteForm.js"
+// NoteForm()
 import { noteList } from "./notes/noteList.js"
 
 
