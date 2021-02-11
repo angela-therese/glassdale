@@ -1,27 +1,28 @@
 
 
 import { CriminalList } from "./criminals/CriminalList.js";
-// CriminalList()
 import { officerList } from "./officers/OfficerList.js"
-
 import { facilityList } from "./facilities/facilitiesList.js";
+import { noteList } from "./notes/noteList.js"
+import { witnessList } from "./witnesses/witnessList.js";
+import { AssociatesList } from "./associates/associatesList.js"
+
+
 
 import { useConvictions } from "./convictions/ConvictionProvider.js";
-import { ConvictionSelect } from "./convictions/ConvictionSelect.js";
+import { getNotes, useNotes} from "./notes/notesDataProvider.js"
+
+
+
+
+
+//DROPDOWN MENUS
 ConvictionSelect()
 import { OfficerSelect } from "./officers/OfficerSelect.js"
 OfficerSelect()
 import { CriminalSelect } from "./notes/noteForm.js"
 CriminalSelect()
-import { witnessList } from "./witnesses/witnessList.js";
-
-import { AssociatesList } from "./associates/associatesList.js"
-
-// import { NoteForm } from "./notes/noteForm.js"
-// NoteForm()
-import { noteList } from "./notes/noteList.js"
-
-
+import { ConvictionSelect } from "./convictions/ConvictionSelect.js";
 
 
 

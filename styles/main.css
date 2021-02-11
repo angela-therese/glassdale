@@ -48,13 +48,14 @@ h1,h2,h3,h4,h5,h6 {
 	display: flex;
 	flex-wrap: wrap;
 	margin: 2em;
+	justify-content: center;
 
 
 }
 
 .notes-card {
-
-	flex-basis: 20%;
+	padding-top: 1.5em;
+	flex-basis: 25%;
 	border: 1px black solid;
 	margin: 1em;
 
